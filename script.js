@@ -13,10 +13,10 @@ async function getWeather() {
 
     try {
       const response = await fetch(apiUrl);
-      const data = awat responce.json();
+      const data = await responce.json();
 
       if (resonce.ok) {
-        dasplayWeather(data;
+        dasplayWeather(data);
       } else {
           weatherInfo.innerHTML = `<p>Город не найден. Проверьте название.</p>`;
       }
