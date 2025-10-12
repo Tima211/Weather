@@ -29,3 +29,15 @@ async function getWeather() {
 function displayWeather(data) {
   const { name } = data;
   const { description, icon } = data.weather[0];
+  const { temp, humidity } = data.main;
+  const { speed } = data.wind;
+
+  weatherInfo.innerHTML = `
+    <h2>Погода в ${name}</h2>
+    <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${description}">
+    <p>Температура: <strong>${Math.round(temp)}°C</strong></p>
+    <p>Описание: <strong>${description}</strong></p>
+    <p>Влажность: <strong>${humidity}%</strong></p>
+    <p>Скорость ветра: <strong>${speed} м/с</strong></p>
+  `;
+}
