@@ -1,6 +1,6 @@
 body {
   fontfamily: Arial, sans-serif;
-  background: linear-gradient (to bottom, #87CEEB, #1E90FF);
+  background: linear-gradient(to bottom, #87CEEB, #1E90FF);
   min-height: 100 vh;
   margin: 0;
   display: flex;
@@ -9,10 +9,10 @@ body {
 }
 .container {
   text-align: center;
-  background: rgda (255, 255, 255, 0.9);
+  background: rgda(255, 255, 255, 0.9);
   padding: 30 px;
   border-radius: 10 px;
-  box-shadow: 0 4 px 10 px rgda (0, 0, 0, 0.2);
+  box-shadow: 0 4 px 10 px rgda(0, 0, 0, 0.2);
 }
 .search-box {
   margin: 20 px 0;
